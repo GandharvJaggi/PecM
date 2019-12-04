@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00897B">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="16dp"
+        android:text="Edit Information"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/NAME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/accounteditname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/accounteditname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#80000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/SID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NAME" />
+
+    <TextView
+        android:id="@+id/SID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="SID"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/accounteditsid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounteditname" />
+
+    <EditText
+        android:id="@+id/accounteditsid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#80000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/PHONE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SID" />
+
+    <TextView
+        android:id="@+id/PHONE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Mobile Number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/accounteditphone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounteditsid" />
+
+    <EditText
+        android:id="@+id/accounteditphone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#80000000"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/EMAIL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PHONE" />
+
+    <TextView
+        android:id="@+id/EMAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="E-mail"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/accounteditemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounteditphone" />
+
+    <EditText
+        android:id="@+id/accounteditemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#80000000"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/accounteditupdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EMAIL" />
+
+    <Button
+        android:id="@+id/accounteditupdate"
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="130dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounteditemail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

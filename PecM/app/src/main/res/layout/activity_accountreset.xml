@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00897B">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="700dp"
+        android:text="Reset Password"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="New password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/accountresetpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView12" />
+
+    <EditText
+        android:id="@+id/accountresetpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#80000000"
+        android:ems="10"
+        android:hint="New password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/CONFIRM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PASSWORD" />
+
+    <TextView
+        android:id="@+id/CONFIRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Confirm password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/accountresetconfirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountresetpassword" />
+
+    <EditText
+        android:id="@+id/accountresetconfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#80000000"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/accountresetupdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CONFIRM" />
+
+    <Button
+        android:id="@+id/accountresetupdate"
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountresetconfirm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

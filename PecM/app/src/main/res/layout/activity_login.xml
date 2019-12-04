@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container123"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00897B"
+    android:backgroundTintMode="src_atop"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/logintosignup"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New here? Sign up..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logIn"
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpass" />
+
+    <Button
+        android:id="@+id/forgotpass"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:text="Forgot password?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpass" />
+
+    <EditText
+        android:id="@+id/loginsid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#80000000"
+        android:ems="10"
+        android:hint="SID"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/PASS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sid" />
+
+    <EditText
+        android:id="@+id/loginpass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#80000000"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/logIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PASS" />
+
+    <TextView
+        android:id="@+id/PASS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/loginpass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginsid" />
+
+    <TextView
+        android:id="@+id/sid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="SID"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/loginsid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="16dp"
+        android:text="Log in"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/sid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

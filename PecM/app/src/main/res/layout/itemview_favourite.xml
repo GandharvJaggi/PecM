@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/accountfavouriteplus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/accountfavouritequantity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/accountfavouriteminus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+    <TextView
+        android:id="@+id/accountfavouriteshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:text="placeholder"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/accountfavouritename"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accountfavouritename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="placeholder"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/accountfavouriteprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountfavouriteshop" />
+
+    <TextView
+        android:id="@+id/accountfavouriteprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="4dp"
+        android:text="placeholder"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountfavouritename" />
+
+    <TextView
+        android:id="@+id/accountfavouritequantity"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/accountfavouriteminus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/accountfavouritestar"
+        style="@style/Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="29dp"
+        android:tint="#858585"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/accountfavouriteplus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_star_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
