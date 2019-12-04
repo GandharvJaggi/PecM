@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.HNS.pecmbusiness">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.Manifest.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.Manifest.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.HNS.pecmbusiness.MainActivity$app"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <activity
+            android:name="com.HNS.pecmbusiness.registration.StartActivity"
+            android:label="@string/app_name"
+            android:launchMode='singleTop'>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.HNS.pecmbusiness.registration.SignupActivity"
+            android:label="Signup"
+            android:launchMode='singleTop'
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.HNS.pecmbusiness.registration.LoginActivity"
+            android:label="Login"
+            android:launchMode='singleTop'
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.HNS.pecmbusiness.MainActivity"
+            android:label="Main"
+            android:launchMode='singleTop'
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.HNS.pecmbusiness.ui.account.AccountmenuActivity"
+            android:label="Menu"
+            android:launchMode='singleTop'
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.HNS.pecmbusiness.ui.account.AccountresetActivity"
+            android:label="Reset"
+            android:launchMode='singleTop'
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.HNS.pecmbusiness.ui.account.AccounteditActivity"
+            android:label="Edit"
+            android:launchMode='singleTop'
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.HNS.pecmbusiness.ui.dashboard.ActiveorderActivity"
+            android:label="active order"
+            android:launchMode='singleTop'
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.HNS.pecmbusiness.ui.dashboard.UnpaidorderActivity"
+            android:label="unpaid order"
+            android:launchMode='singleTop'
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
